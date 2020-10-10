@@ -1,10 +1,34 @@
 @charset "UTF-8";
             body {
-                color: rgba(0, 0, 0, 0.5);
-                background-image: url(./appearance/fundo4.jpg);
-                background-color: grey;
+                color: rgba(0, 0, 0, 1);
+                background-color: white;
             }
             p {
                 text-align: justify;
                 text-indent: 50px;
+            }
+            /* Formatação de imagens com legendas*/
+            figure.foto_legenda {
+                position: relative;
+                border: 5px solid white;
+                box-shadow: 1px 1px 4px black;
+            }
+            figure.foto_legenda img {
+                width: 100%;
+                height: 100%;
+            }
+            figure.foto_legenda figcaption {
+                position: absolute;
+                top: 0px;
+                background-color:rgba(0, 0, 0, 0.5);
+                color: white;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                opacity: 0; 
+                transition: opacity 1s;
+            }
+            figure.foto_legenda:hover figcaption {
+                opacity: 1;
             }
