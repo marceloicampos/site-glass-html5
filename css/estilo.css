@@ -48,6 +48,17 @@
                 background-color: #dddddd;
                 padding: 10px;
                 margin: 1px;
+                transition: background-color 1s;
+            }
+            nav#menu li:hover {
+                background-color: #606660;
+            }
+            nav#menu a {
+                text-decoration: none;
+                color: #000000;
+            }
+            nav#menu a:hover {
+                color: #ffffff;
             }
             nav#menu h1 {
                 display: none;
