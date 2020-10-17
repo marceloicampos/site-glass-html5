@@ -9,7 +9,7 @@
                 background-color: #dddddd;
             }
             div#interface {
-                width: 1600px;
+                width: 900px;
                 background-color: #ffffff;
                 margin: -20px auto 0px auto;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -17,7 +17,7 @@
             }
             header#cabecalho img#icone {
                 position: absolute;
-                left: 1580px;
+                left: 1230px;
                 top: 70px;
             }
             header#cabecalho {
@@ -78,7 +78,7 @@
                 text-transform: uppercase;
                 position: absolute;
                 top: -20px;
-                left: 1120px;
+                left: 770px;
             }
             nav#menu li {
                 display: inline-block;
@@ -99,4 +99,23 @@
             }
             nav#menu h1 {
                 display: none;
+            }
+            section#corpo {
+                display: block;
+                width: 520px;
+                float: left;
+                border-right: 1px solid #606060;
+                padding-right: 15px;
+            }
+            aside#lateral {
+                display: block;
+                width: 350px;
+                float: right;
+            }
+            footer#rodape {
+                clear: both;
+                border-top: 1px solid #606060;
+            }
+            footer#rodape p {
+                text-align: center;
             }
