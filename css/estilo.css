@@ -10,7 +10,7 @@
                 font-family: Arial, sans-serif;
             }
             div#interface {
-                width: 69%;
+                width: 900px;
                 background-color: #ffffff;
                 margin: -20px auto 0px auto;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -18,13 +18,13 @@
             }
             header#cabecalho img#icone {
                 position: absolute;
-                left: 75%;
+                left: 1240px;
                 top: 70px;
             }
             header#cabecalho {
                 border-bottom: 1px solid #606060;
                 height: 150px;
-                background: url(../imagens/glass-logo-peq.jpg)no-repeat 0px 80px;
+                background: url(../imagens/glass-logo-peq.jpg) no-repeat 0px 80px;
             }
             header#cabecalho h1 {
                 font-family: 'FonteLogo', sans-serif;
@@ -50,7 +50,7 @@
                 text-transform: uppercase;
                 position: absolute;
                 top: -20px;
-                left: 50%;
+                left: 770px;
             }
             nav#menu li {
                 display: inline-block;
@@ -85,10 +85,10 @@
             }
             section#corpo {
                 display: block;
-                width: 60%;
+                width: 510px;
                 float: left;
                 border-right: 1px solid #606060;
-                padding-right: 15px;
+                padding-right: 10px;
             }
             article#noticia h2 {
                 font-size: 13pt;
@@ -180,7 +180,7 @@
             aside#lateral {
                 display: block;
                 float: right;
-                width: 37%;
+                width: 350px;
                 background-color: #dddddd;
                 padding: 10px;
                 margin-top: 10px;
