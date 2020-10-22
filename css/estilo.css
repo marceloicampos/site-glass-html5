@@ -5,7 +5,7 @@
     src: url(../fonts/bubblegum-sans-regular.otf);
 }
             body {
-                color: rgba(0, 0, 0, 1);
+                color: rgba(0, 0, 0, 0.9);
                 background-color: #dddddd;
                 font-family: Arial, sans-serif;
             }
@@ -18,7 +18,7 @@
             }
             header#cabecalho img#icone {
                 position: absolute;
-                left: 1240px;
+                padding-left: 730px;
                 top: 70px;
             }
             header#cabecalho {
@@ -30,7 +30,7 @@
                 font-family: 'FonteLogo', sans-serif;
                 font-size: 30pt;
                 color: #606060;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
                 padding: 0px;
                 margin-bottom: 0px;
             }
@@ -50,14 +50,14 @@
                 text-transform: uppercase;
                 position: absolute;
                 top: -20px;
-                left: 770px;
+                padding-left: 280px;
             }
             nav#menu li {
                 display: inline-block;
                 background-color: #dddddd;
                 padding: 10px;
-                margin: 1px;
-                transition: background-color 1s;
+                margin: 2px;
+                transition: 1s;
             }
             nav#menu li:hover {
                 background-color: #606660;
@@ -132,14 +132,14 @@
             figure.foto_legenda figcaption {
                 position: absolute;
                 top: 0px;
-                background-color:rgba(0, 0, 0, 0.5);
+                background-color:rgba(0, 0, 0, 0.4);
                 color: white;
                 width: 100%;
                 height: 100%;
                 padding: 10px;
                 box-sizing: border-box;
                 opacity: 0; 
-                transition: opacity 1s;
+                transition: 1s;
             }
             figure.foto_legenda:hover figcaption {
                 opacity: 1;
@@ -161,9 +161,11 @@
                 background-color: #606060;
                 vertical-align: top;
                 font-weight: bold;
+                text-align: right;
             }
             table#tabela td.cd {
                 background-color: #cecece;
+                text-align: left;
             }
             table#tabela caption {
                 color:#888888;
