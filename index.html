@@ -5,17 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tudo sobre Google Glass</title>
         <link rel="stylesheet" href="./css/estilo.css">
-        <script>
-            function ligaLampada() {
-                document.getElementById("luz").src="./imagens/lampada-acesa.jpg";
-            }
-            function desligaLampada() {
-                document.getElementById("luz").src="./imagens/lampada-apagada.jpg";    
-            }
-            function quebraLampada() {
-                document.getElementById("luz").src="./imagens/lampada-quebrada.jpg"; 
-            }
-        </script>
     </head>
 <body>
 <div id="interface">
@@ -82,12 +71,9 @@
     <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
     <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
     <h2>TESTANDO JAVASCRIPT</h2>
-    <script>
-        document.write("HELLO WORLD - JAVA SCRIPT - " + Date());
-    </script>
-    <h2>PASSE O MOUSE E LIGUE A LÂMPADA</h2>
-    <img src="./imagens/lampada-apagada.jpg" id="luz" onmousemove=ligaLampada() onmouseout=desligaLampada() onclick=quebraLampada()>
-    <h3>CUIDADO: NÃO CLIQUE na lâmpada !!!</h3>
+        <script>
+            document.write("Olá Mundo ! - JS - Hoje é dia:" + Date());
+        </script>
 </aside>
 <footer id="rodape">    
     <p>Copyright &copy; 10/2020 - by Marcelo Campos </br><a href="https://www.facebook.com/marceloicampos" target="_blank">Facebook</a> | <a href="https://github.com/marceloicampos" target="_blank">GitHub</a></p>
