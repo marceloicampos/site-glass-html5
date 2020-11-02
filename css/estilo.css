@@ -16,9 +16,10 @@
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
                 padding: 10px
             }
+            /* Estilos do cabecalho do site */
             header#cabecalho img#icone {
                 position: absolute;
-                padding-left: 730px;
+                padding-left: 720px;
                 top: 70px;
             }
             header#cabecalho {
@@ -41,7 +42,7 @@
                 padding: 0px;
                 margin-top: 0px;
             }
-            /* Formatação do Menu de Navegação em CCS 3 */
+            /* Estilos do Menu de Navegação */
             nav#menu {
                 display: block;
             }
@@ -50,7 +51,7 @@
                 text-transform: uppercase;
                 position: absolute;
                 top: -20px;
-                padding-left: 200px;
+                padding-left: 280px;
             }
             nav#menu li {
                 display: inline-block;
@@ -83,6 +84,7 @@
             a:hover {
                 text-decoration: underline;
             }
+            /* Estilos da section */
             section#corpo {
                 display: block;
                 width: 510px;
@@ -90,6 +92,7 @@
                 border-right: 1px solid #606060;
                 padding-right: 10px;
             }
+            /* Estilos do article */
             article#noticia h2 {
                 font-size: 13pt;
                 color: #606060;
@@ -97,6 +100,7 @@
                 padding: 5px 0px 5px 10px;
                 margin: 10px 0px 10px 0px;
             }
+            /* Estilos do cabecalho do article */
             header#cabecalho-artigo h1 {
                 font-family: 'FonteLogo', sans-serif;
                 font-size: 20pt;
@@ -144,6 +148,7 @@
             figure.foto_legenda:hover figcaption {
                 opacity: 1;
             }
+            /* Estilos da tabela */
             table#tabela {
                 border: 1px solid #606060;
                 border-spacing: 0px;
@@ -179,6 +184,7 @@
                 font-size: 8pt;
                 margin-top: 10px;
             }
+            /* Estilos do aside */
             aside#lateral {
                 display: block;
                 float: right;
@@ -200,10 +206,12 @@
                 color: #ffffff;
                 padding: 5px
             }
+            /* Estilos do rodapé */
             footer#rodape {
                 clear: both;
                 border-top: 1px solid #606060;
             }
             footer#rodape p {
+                color: rgba(0, 0, 0, 0.9);
                 text-align: center;
             }
