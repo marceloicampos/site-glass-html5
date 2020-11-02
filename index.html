@@ -5,6 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tudo sobre Google Glass</title>
         <link rel="stylesheet" href="./css/estilo.css">
+        <script>
+            function ligaLampada() {
+                document.getElementById("luz").src="./imagens/lampada-acesa.jpg";
+            }
+            function desligaLampada() {
+                document.getElementById("luz").src="./imagens/lampada-apagada.jpg";    
+            }
+            function quebraLampada() {
+                document.getElementById("luz").src="./imagens/lampada-quebrada.jpg"; 
+            } 
+        </script>
     </head>
 <body>
 <div id="interface">
@@ -74,6 +85,9 @@
         <script>
             document.write("Olá Mundo ! - JS - Hoje é dia:" + Date());
         </script>
+    <h2>PASSE O MOUSE E LIGUE A LÂMPADA</h2>
+        <img src="./imagens/lampada-apagada.jpg" id="luz" onmousemove=ligaLampada() onmouseout=desligaLampada() onclick=quebraLampada()>
+    <h3><font color="red">CUIDADO: NÃO CLIQUE na lâmpada !!!</h3>
 </aside>
 <footer id="rodape">    
     <p>Copyright &copy; 10/2020 - by Marcelo Campos </br><a href="https://www.facebook.com/marceloicampos" target="_blank">Facebook</a> | <a href="https://github.com/marceloicampos" target="_blank">GitHub</a></p>
