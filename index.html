@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tudo sobre Google Glass</title>
-        <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="./css/estilo.css">
     </head>
+    <script type="text/javascript" src="./javascript/funcoes.js"></script>
 <body>
 <div id="interface">
     <header id="cabecalho">
@@ -17,11 +18,11 @@
         <nav id="menu">    
             <h1>Menu Principal</h1>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./specs.html">Especificações</a></li>
-                <li><a href="./fotos.html">Fotos</a></li>
-                <li><a href="./multimidia.html">Multimídia</a></li>
-                <li><a href="./fale-conosco.html">Fale conosco</a></li>
+                <li onmouseover="mudaFoto('./imagens/home.png')" onmouseout="mudaFoto('./imagens/glass-oculos-preto-peq.png')"><a href="./index.html">Home</a></li>
+                <li onmouseover="mudaFoto('./imagens/especificacoes.png')" onmouseout="mudaFoto('./imagens/glass-oculos-preto-peq.png')"><a href="./specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('./imagens/fotos.png')" onmouseout="mudaFoto('./imagens/glass-oculos-preto-peq.png')"><a href="./fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('./imagens/multimidia.png')" onmouseout="mudaFoto('./imagens/glass-oculos-preto-peq.png')"><a href="./multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('./imagens/contato.png')" onmouseout="mudaFoto('./imagens/glass-oculos-preto-peq.png')"><a href="./fale-conosco.html">Fale conosco</a></li>
             </ul>
         </nav>
     </header>
@@ -39,10 +40,10 @@
     <p>O Google Glass atualmente é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="https://www.google.com/glass/start/" target="_blank">Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo conferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
     <figure class=foto_legenda>
         <img src="./imagens/glass-quadro-homem-mulher.jpg" alt="homem e mulher usando google glass">
-        <figcaption>
-            <h3>Google Glass</h3>
-            <p>Uma nova maneira de ver o mundo.</p>
-        </figcaption>
+            <figcaption>
+                <h3>Google Glass</h3>
+                <p>Uma nova maneira de ver o mundo.</p>
+            </figcaption>
     </figure>
     <h2>Data de lançamento</h2>
     <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
@@ -75,20 +76,8 @@
             document.write("Olá Mundo ! - JS - Hoje é dia:" + Date());
         </script>
     <h2>PASSE O MOUSE E LIGUE A LÂMPADA</h2>
-    <h4><a href="./testejsID.html" id="modeljava">Link: Exemplo Javascrit com ID</a></h4>
-    <h4><a href="./testejsIF.html" id="modeljava">Link: Exemplo Javascrit com IF</a></h4>
-
-    <script>
-        var quebrada = false;
-        function mudaLampada(tipo) {
-            if (!quebrada) {
-                document.getElementById("luz").src = "./imagens/" + tipo + ".jpg";
-            if (tipo == 'lampada-quebrada') {
-                quebrada = true;
-            }
-            }
-        }
-    </script>
+    <h4><a href="./testejsID.html">Link: Exemplo Javascript com ID</a></h4>
+    <h4><a href="./testejsIF.html">Link: Exemplo Javascript com IF</a></h4>
         <img src="./imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">
     <h3><font color="red">CUIDADO: NÃO CLIQUE na lâmpada !!!</h3>
 </aside>
