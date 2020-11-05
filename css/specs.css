@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+section#conteudo {
+	width: 900px;
+	margin: auto;
+}
+iframe#frame-spec {
+	width: 395px;
+	height: 280px;
+	border: none;
+}
+iframe#frame-spec ::-webkit-scrollbar {
+	display: none;
+	/* Isso aqui só funciona parcialmente no Chrome pois mesmo com isto e sem aparecer a barra de rolagem é possível se rolar a tela do iframe com o mouse, a melhor forma foi colocando no style do body do google-glass.html o overflow: hidden, assim funcionou tanto pro chrome quanto pro IE*/
+}
