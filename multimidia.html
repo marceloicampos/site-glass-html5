@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tudo sobre Google Glass</title>
         <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="./css/media.css">
+        <script type="text/javascript" src="./javascript/funcoes.js"></script>
     </head>
-    <script type="text/javascript" src="./javascript/funcoes.js"></script>
 <body>
 <div id="interface">
     <header id="cabecalho">
@@ -14,7 +15,7 @@
             <h1>Google Glass</h1>
             <h2>A revolução do Google está chegando</h2>
         </hgroup>
-        <img id="icone" src="./imagens/glass-oculos-preto-peq.png" alt="oculos google glass preto e pequeno">
+        <img id="icone" src="./imagens/multimidia.png" alt="oculos google glass preto e pequeno">
         <nav id="menu">    
             <h1>Menu Principal</h1>
             <ul>
@@ -26,19 +27,32 @@
             </ul>
         </nav>
     </header>
-
-Glass > Multimídia
-Sons e Vídeos
-by Marcelo Campos
-Atualizado em 01/10/2020
-
-Áudio e Vídeo
-
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
-
+<section id="corpo-full">
+    <article id="noticia">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h3>Glass > Multimídia</h3>
+                <h1>Sons e Vídeos</h1>
+                <h2>by Marcelo Campos</h2>
+                <h3 class="direita">Atualizado em 01/10/2020</h3>
+            </hgroup>
+        </header>
+<p>Áudio e Vídeo</p>
+    <div id="tv-radio">
+        <audio id="musica" controls="controls">
+        <source src="./media/2009-lovers-carvings-bibio.mp3"  type="audio/mpeg">
+        </audio>
+        
+        <video id="filme" controls="controls" poster="./imagens/video-mini03.jpg">
+        <source src="./media/getting-started.mp4" type="video/mp4">
+        </video>
+    </div>
+    </article>
+</section>
 <footer id="rodape">    
-    <p>Copyright &copy; 10/2020 - by Marcelo Campos </br><a href="https://www.facebook.com/marceloicampos" target="_blank">Facebook</a> | <a href="https://github.com/marceloicampos" target="_blank">GitHub</a></p>
+    <p>Copyright &copy; 10/2020 - by Marcelo Campos </br>
+        <a href="https://www.facebook.com/marceloicampos" target="_blank">Facebook</a> | 
+        <a href="https://github.com/marceloicampos" target="_blank">GitHub</a></p>
 </footer>
 </div>
 </body>
