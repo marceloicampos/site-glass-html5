@@ -37,33 +37,59 @@
                 <h3 class="direita">Atualizado em 01/10/2020</h3>
             </hgroup>
         </header>
-Identificação do Usuário
-    E-mail:
-    Senha:
-    Nome:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
 
-Endereço do Usuário
-    Endereço:
-    Número:
-    Complemento:
-    Estado:
-    Cidade:
+<form action="">
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+    <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+        <p><label for="cNome">Nome:</label>
+            <input type="text" name="tNome" id="cNome" size="40" maxlength="80" placeholder="Nome Completo"></p>
+        <p><label for="cEmail">E-mail:</label>
+            <input type="email" name="tEmail" id="cEmail" size="40" maxlength="80" placeholder="E-Mail"></p>
+        <p><label for="cSenha">Senha:</label>
+            <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+    <fieldset id="sexo"><legend>Sexo:</legend>
+            <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label><br>
+            <input type="radio" name="tSexo" id="cFemi"><label for="cFemi">Feminino</label>
+    </fieldset>
+    
+        <p><label for="cDate">Data de Nascimento:</label>
+            <input type="date" name="tDate" id="cDate"></p>
+        <p><label for="cCelular">Celular:</label>
+            <input type="tel" name="tCelular" id="cCelular" size="12" maxlength="11" placeholder="Somente números"></p>
+    </fieldset>
 
-[BOTÃO ENVIAR]
+    <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+            <p><label for="cEndereco">Endereço:</label>
+                <input type="text" name="tEndereco" id="cEndereco" size="40" maxlength="80" placeholder="Rua, Avenida, Travessa..."></p>
+            <p><label for="cNumero">Número:</label>
+                <input type="text" name="tNumero" id="cNumero" size="8" maxlength="10" placeholder="Número"></p>
+            <p><label for="cCompl">Compl:</label>
+                <input type="text" name="tCompl" id="cCompl" size="20" maxlength="40" placeholder="Qd, Bl, Apto..."></p>
+            <p><label for="cCidade">Cidade:</label>
+                <input type="text" name="tCidade" id="cCidade" size="20" maxlength="40" placeholder="Cidade"></p>
+            <p><label for="cEstado">Estado:</label>
+                <input type="text" name="tEstado" id="cEstado" size="4" maxlength="2" placeholder="Sigla UF"></p>
+            <p><label for="cCEP">CEP:</label>
+                <input type="text" name="tCEP" id="cCEP" size="12" maxlength="8" placeholder="Somente números"></p>
+    </fieldset>
+
+    <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+            Grau de Urgência:
+            Mensagem:
+    </fieldset>
+
+    <fieldset id="pedido"><legend>Quero um Google Glass</legend>
+            Gostaria de adquirir um Google Glass quando disponível
+            Cor:
+            Quantidade:
+            Preço Total: R$
+    </fieldset>
+
+        [BOTÃO ENVIAR]
+
+</form>
+
     </article>
 </section>
 <footer id="rodape">    
