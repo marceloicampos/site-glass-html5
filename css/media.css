@@ -1,4 +1,17 @@
 @charset "UTF-8";
+@font-face {
+    font-family: "FonteLogo";
+    src: url(../fonts/bubblegum-sans-regular.otf);
+}
+
+p.title {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-indent: 0px;
+    text-align: center;
+}
 
 div#tv-radio {
     width: 900px;

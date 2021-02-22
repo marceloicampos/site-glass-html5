@@ -9,12 +9,21 @@
 <body>
     <h1>Testando JavaScript com IF</h1>
     <p><a href="./index.html">&larr; voltar para home</a></p>
-    <h2>Passe o mouse e ligue a Lâmpada</h2>
-        <!-- () AQUI são parâmetros -->
-        <!-- {} AQUI são códigos -->
     <script>
-        var quebrada = false;
+        alert("Olá, mundo no alerta!");
+        document.write("Olá, mundo na tela ! ");
+        document.write("Data de Hoje: " + Date());
+    </script>
+        <!-- (entre) são parâmetros - são valores que podem ser passados do seu código principal para um determinada função e a função pode reagir num novo código de acordos com os parâmetros passados -->
+        <!-- {entre} são códigos que recebem os parâmetros -->
+        <!--Javascript tem a grande limitação de somente funcionar dentro dos navegadores, ou seja, manipula objetos apenas dentro do navegador, não operando em nada que se refere à maquina, somente podendo capturar dados que a máquina informa (como a data e hora do sistema).-->
+    <h2>Passe o mouse e ligue a Lâmpada</h2>
+    <script>
+        var quebrada = false; // a variável está guardando o dado de NÃO quebrada. Nota: variável Global, pois está fora da função.
+        // var varname1 = value1 - pode ser qualquer expressão, varname2, varnameN - pode ser qualquer identificador
         function mudaLampada(tipo) {
+        // function name (arg1 - nomes para serem usandos pela função como nomes formais de argumentos , arg2, functionBody - uma string que contém as instruções)
+        // = é atribuição >>> == valor igual a >>> === valor igual e tipo igual a
             if (tipo == 1) {
                 arquivo = "./imagens/lampada-acesa.jpg"
             }
@@ -23,16 +32,18 @@
             }
             if (tipo == 3) {
                 arquivo = "./imagens/lampada-quebrada.jpg"
+            // quebrada = true
             }
+            // document.getElementById("luz").src= arquivo
             if (!quebrada) {
                 document.getElementById("luz").src= arquivo
                 if (tipo == 3) {
-                    quebrada = true;
+                    quebrada = true // se ocorrer tipo 3 a variável quebrada será verdadeiro e então o tipo 3 não volta ao estado de falso
                 }
             }
-        } 
+        }
     </script>
     <img src="./imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)">
-    <h3><font color="red">CUIDADO: NÃO CLIQUE na lâmpada. A lâmpada quebra, mas NÃO volta !!!</h3>
+    <h3 style="color:red">CUIDADO: NÃO CLIQUE na lâmpada.<br>A lâmpada quebra e NÃO volta ao normal !!!</h3>
 </body>
 </html>

@@ -11,12 +11,12 @@
 <body>
 <div id="interface">
     <header id="cabecalho">
-        <hgroup>    
+        <hgroup>
             <h1>Google Glass</h1>
             <h2>A revolução do Google está chegando</h2>
         </hgroup>
         <img id="icone" src="./imagens/glass-oculos-preto-peq.png" alt="oculos google glass preto e pequeno">
-        <nav id="menu">    
+        <nav id="menu">
             <h1>Menu Principal</h1>
             <ul>
                 <li onmouseover="mudaFoto('./imagens/home.png')" onmouseout="mudaFoto('./imagens/glass-oculos-preto-peq.png')"><a href="./index.html">Home</a>
@@ -33,7 +33,7 @@
             <hgroup>
                 <h3>Tecnologia > Inovações</h3>
                 <h1>Saiba tudo sobre o Google Glass</h1>
-                <h2>by Marcelo Campos</h2>
+                <h2>by Marcelo I Campos - Sobre <a href="./about.html">QUEM SOU EU</a></h2>
                 <h3 class="direita">Atualizado em 01/10/2020</h3>
             </hgroup>
         </header>
@@ -89,11 +89,16 @@
     <h2> PASSE O MOUSE E LIGUE A LÂMPADA</h2>
     <h4><a href="./testejsID.html"> > EXPERIMENTE: Javascript com ID</a></h4>
     <h4><a href="./testejsIF.html"> > EXPERIMENTE: Javascript com IF</a></h4>
-        <img src="./imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"alt="lâmpada acessa ou lâmpada apagada ou lâmpada quebrada, depende da função usada no JavaScript">
-    <h3><font color="red">CUIDADO: NÃO CLIQUE na lâmpada !!!</h3>
+        <img src="./imagens/lampada-apagada.jpg" id="luz" 
+        onmousemove="mudaLampada('lampada-acesa')" 
+        onmouseout="mudaLampada('lampada-apagada')" 
+        onclick="mudaLampada('lampada-quebrada')" 
+        ondblclick="mudaLampada('lampada-alert')" 
+        alt="lâmpada acessa ou lâmpada apagada ou lâmpada quebrada, depende da função usada no JavaScript">
+    <h3 style="color: red; font-family: Arial, Helvetica, sans-serif;">CUIDADO: NÃO CLIQUE na lâmpada !!! Nota: para consertar clique 2 vezes</h3>
 </aside>
-<footer id="rodape">    
-    <p>Copyright &copy; 10/2020 - by Marcelo Campos </br>
+<footer id="rodape">
+    <p>Copyright &copy; 10/2020 - by Marcelo I Campos - <a href="./about.html">QUEM SOU EU</a></br>
         <a href="https://www.facebook.com/marceloicampos" target="_blank">Facebook</a> | 
         <a href="https://github.com/marceloicampos" target="_blank">GitHub</a></p>
 </footer>
