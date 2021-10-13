@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tudo sobre Google Glass</title>
-        <link rel="stylesheet" type="text/css" href="./css/estilo.css">
-        <link rel="stylesheet" type="text/css" href="./css/form.css">
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="./css/form.css" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
         <script type="text/javascript" src="./javascript/funcoes.js"></script>
         <script>
             function calc_total() {
@@ -16,122 +16,334 @@
             }
         </script>
     </head>
-<body>
-<div id="interface">
-    <header id="cabecalho">
-        <hgroup>
-            <h1>Google Glass</h1>
-            <h2>A revolução do Google está chegando</h2>
-        </hgroup>
-        <img id="icone" src="./imagens/contato.png" alt="oculos google glass preto e pequeno">
-        <nav id="menu">
-            <h1>Menu Principal</h1>
-            <ul>
-                <li onmouseover="mudaFoto('./imagens/home.png')" onmouseout="mudaFoto('./imagens/contato.png')"><a href="./index.html">Home</a>
-                <li onmouseover="mudaFoto('./imagens/especificacoes.png')" onmouseout="mudaFoto('./imagens/contato.png')"><a href="./specs.html">Especificações</a>
-                <li onmouseover="mudaFoto('./imagens/fotos.png')" onmouseout="mudaFoto('./imagens/contato.png')"><a href="./fotos.html">Fotos</a>
-                <li onmouseover="mudaFoto('./imagens/multimidia.png')" onmouseout="mudaFoto('./imagens/contato.png')"><a href="./multimidia.html">Multimídia</a>
-                <li onmouseover="mudaFoto('./imagens/contato.png')" onmouseout="mudaFoto('./imagens/contato.png')"><a href="./fale-conosco.html">Fale conosco</a>
-            </ul>
-        </nav>
-    </header>
-<section id="corpo-full">
-    <article id="noticia">
-        <header id="cabecalho-artigo">
-            <hgroup>
-                <h3>Fale Conosco > Contato</h3>
-                <h1>Formulário de Contato</h1>
-                <h2>by Marcelo I Campos - Sobre <a href="./about.html">QUEM SOU EU</a></h2>
-                <h3 class="direita">Atualizado em 01/10/2020</h3>
-            </hgroup>
-        </header>
-<form method="POST" id="fContato" action="mailto:marceloicampos@outlook.com" oninput="calc_total()">
-    <!--o method="GET" pega todos dados do formulário e lança na url do navegador e depois enviar as queries, geralmente usados para buscas-->
-    <!--o method="POST" os dados são enviados por pacotes dentro da solicitação, geralmente usado para coleta de informações, importante ressaltar que o POST não inclui criptografia na coleta de dados-->
-    <!--Tudo que estiver entre a tag form representa um formulário-->
-    <fieldset id="usuario"><legend>Identificação do Usuário</legend>
-    <!--A tag fieldset é conjunto de campos a tag ledeng é a legenda do conjunto-->
-    <!--label são etiquetas referenciadas por id através de um parâmetro for-->
-    <!--input é uma caixa entrada de objeto, com type text que é padrão, name, id, size da caixa, maxlength que é máximo de caracteres e placeholder que é o texto indicativo padrão de entrada da caixa-->
-        <p><label for="cNome">Nome:</label>
-            <input type="text" name="tNome" id="cNome" size="45" maxlength="80" placeholder="Nome Completo"></p>
-        <p><label for="cEmail">E-mail:</label>
-            <input type="email" name="tEmail" id="cEmail" size="45" maxlength="80" placeholder="E-Mail"></p>
-    <!--<p><label for="cSenha">Senha:</label>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                <img
+                    id="icone"
+                    src="./imagens/contato.png"
+                    alt="oculos google glass preto e pequeno"
+                />
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li
+                            onmouseover="mudaFoto('./imagens/home.png')"
+                            onmouseout="mudaFoto('./imagens/contato.png')"
+                        >
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li
+                            onmouseover="mudaFoto('./imagens/especificacoes.png')"
+                            onmouseout="mudaFoto('./imagens/contato.png')"
+                        >
+                            <a href="./specs.html">Especificações</a>
+                        </li>
+                        <li
+                            onmouseover="mudaFoto('./imagens/fotos.png')"
+                            onmouseout="mudaFoto('./imagens/contato.png')"
+                        >
+                            <a href="./fotos.html">Fotos</a>
+                        </li>
+                        <li
+                            onmouseover="mudaFoto('./imagens/multimidia.png')"
+                            onmouseout="mudaFoto('./imagens/contato.png')"
+                        >
+                            <a href="./multimidia.html">Multimídia</a>
+                        </li>
+                        <li
+                            onmouseover="mudaFoto('./imagens/contato.png')"
+                            onmouseout="mudaFoto('./imagens/contato.png')"
+                        >
+                            <a href="./fale-conosco.html">Fale conosco</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="corpo-full">
+                <article id="noticia">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                            <h3>Fale Conosco &gt; Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>
+                                by Marcelo I Campos - Sobre
+                                <a href="./about.html">QUEM SOU EU</a>
+                            </h2>
+                            <h3 class="direita">Atualizado em 01/10/2020</h3>
+                        </hgroup>
+                    </header>
+                    <form
+                        method="POST"
+                        id="fContato"
+                        action="mailto:marceloicampos@outlook.com"
+                        oninput="calc_total()"
+                    >
+                        <!--o method="GET" pega todos dados do formulário e lança na url do navegador e depois enviar as queries, geralmente usados para buscas-->
+                        <!--o method="POST" os dados são enviados por pacotes dentro da solicitação, geralmente usado para coleta de informações, importante ressaltar que o POST não inclui criptografia na coleta de dados-->
+                        <!--Tudo que estiver entre a tag form representa um formulário-->
+                        <fieldset id="usuario">
+                            <legend>Identificação do Usuário</legend>
+                            <!--A tag fieldset é conjunto de campos a tag ledeng é a legenda do conjunto-->
+                            <!--label são etiquetas referenciadas por id através de um parâmetro for-->
+                            <!--input é uma caixa entrada de objeto, com type text que é padrão, name, id, size da caixa, maxlength que é máximo de caracteres e placeholder que é o texto indicativo padrão de entrada da caixa-->
+                            <p>
+                                <label for="cNome">Nome:</label>
+                                <input
+                                    type="text"
+                                    name="tNome"
+                                    id="cNome"
+                                    size="45"
+                                    maxlength="80"
+                                    placeholder="Nome Completo"
+                                />
+                            </p>
+                            <p>
+                                <label for="cEmail">E-mail:</label>
+                                <input
+                                    type="email"
+                                    name="tEmail"
+                                    id="cEmail"
+                                    size="45"
+                                    maxlength="80"
+                                    placeholder="E-Mail"
+                                />
+                            </p>
+                            <!--<p><label for="cSenha">Senha:</label>
             <input type="password" name="tSenha" id="cSenha" size="12" maxlength="8" placeholder="8 dígitos"></p> -->
-        <p><label for="cCelular">Celular:</label>
-            <input type="tel" name="tCelular" id="cCelular" size="12" maxlength="11" placeholder="Somente números"></p>
-        <p><label for="cDate">Data de Nascimento:</label>
-            <input type="date" name="tDate" id="cDate"></p>
-        <p><label for="cTest">Outros:</label>
-            <input type="text" name="tTest" id="cTest" size="45" maxlength="80" placeholder="Outras Informações"></p>
-    </fieldset>
-    <fieldset id="sexo"><legend>Sexo:</legend>
-    <!--radio implanta uma "bolinha de marcação" de seleção de opção, nesse caso o input fica antes do label, ou seja, entrada antes da informação. Se quiser que a opção fique já marcada entre com o parâmetro checked-->
-        <input type="radio" name="tSexo" id="cMasc"><label for="cMasc"> Masculino</label><br>
-        <input type="radio" name="tSexo" id="cFemi"><label for="cFemi"> Feminino</label><br>
-        <input type="radio" name="tSexo" id="cSem"><label for="cSem"> Outra Opção</label>
-    </fieldset>
-    <fieldset id="endereco"><legend>Endereço do Usuário</legend>
-            <p><label for="cEndereco">End:</label>
-                <input type="text" name="tEndereco" id="cEndereco" size="42" maxlength="80" placeholder="Rua, Avenida, Travessa..."></p>
-            <p><label for="cNumero">Núm:</label>
-                <input type="number" name="tNumero" id="cNumero" size="18" maxlength="9" min="0" max="999999999" placeholder="Número"></p>
-            <p><label for="cCompl">Comp:</label>
-                <input type="text" name="tCompl" id="cCompl" size="20" maxlength="40" placeholder="Qd, Bl, Apto..."></p>
-            <p><label for="cCid">Cidade:</label>
-                <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Cidade" list="cidades"></p>
-                <datalist id="cidades">
-                    <!--datalist cria uma lista de opções pré definidas-->
-                    <option value="Fortaleza"></option>
-                    <option value="Caucaia"></option>
-                    <option value="Horizonte"></option>
-                    <option value="Maracanaú"></option>
-                </datalist>
-            <p><label for="cEstado">Estado:</label>
-            <!--a Tag Select cria caixas de seleção combinadas com option para as OPÇÕES e optgroup para GRUPO DE OPÇÕES, VALEU retorna o valor da seleção e o parâmetro selected indica o valor padão inicial-->
-                <select name="tEstado" id="cEstado">
-                    <option value="--" selected>--</option>
-                        <optgroup label="Região Sudeste">
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="SP">São Paulo</option>
-                        </optgroup>
-                        <optgroup label="Nordeste">
-                            <option value="CE">Ceará</optio>
-                            <option value="PE">Pernambuco</option>
-                        </optgroup>
-                </select></p>
-            <p><label for="cCEP">CEP:</label>
-                <input type="text" name="tCEP" id="cCEP" size="12" maxlength="8" placeholder="Somente números"></p>
-    </fieldset>
-    <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-            <p><label for="cGrau">Grau de Urgência:</label>
-                Mín <input type="range" name="tGrau" id="cGrau" min="0" max="12" step="2"> Máx</p>
-            <p><label for="cMens">Mensagem:</label>
-                <textarea name="tMens" id="cMens" cols="50" rows="10" maxlength="1000" placeholder="Deixa sua mensagem. Máx 1000 caracteres."></textarea></p>
-    </fieldset>
-    <fieldset id="pedido"><legend>Quero Comprar um Google Glass</legend>
-            <p><input type="checkbox" name="tPed" id="cPed" checked>
-                <label for="cPed">Gostaria de adquirir um Google Glass quando disponível?</label></p>
-            <p><label for="cCor">Cor:</label>
-                <input type="color" name="tCor" id="cCor" value="#ffffff"></p>
-            <p><label for="cQtd">Quantidade:</label>
-                <input type="number" name="tQtd" id="cQtd" min="1" max="5" value="0"></p>
-            <p>Preço Unitário: R$ 1.000,00</p>
-            <p><label for="cTot">Preço Total: R$</label>
-                <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly></p>
-    </fieldset>
-        <!-- <p><label for="cEnviar"></label> -->
-            <!-- <input type="submit" name="tEnviar" id="cEnviar"></p> ESTE É O INPUT PADRÃO DO NAVEGADOR-->
-            <input type="image" src="./imagens/botao-enviar.png" name="tEnviar" id="cEnviar">
-</form>
-    </article>
-</section>
-<footer id="rodape">
-    <p>Copyright &copy; 10/2020 - by Marcelo I Campos - Sobre <a href="./about.html">QUEM SOU EU</a></br>
-        <a href="https://www.facebook.com/marceloicampos" target="_blank">Facebook</a> | 
-        <a href="https://github.com/marceloicampos" target="_blank">GitHub</a></p>
-</footer>
-</div>
-</body>
+                            <p>
+                                <label for="cCelular">Celular:</label>
+                                <input
+                                    type="tel"
+                                    name="tCelular"
+                                    id="cCelular"
+                                    size="12"
+                                    maxlength="11"
+                                    placeholder="Somente números"
+                                />
+                            </p>
+                            <p>
+                                <label for="cDate">Data de Nascimento:</label>
+                                <input type="date" name="tDate" id="cDate" />
+                            </p>
+                            <p>
+                                <label for="cTest">Outros:</label>
+                                <input
+                                    type="text"
+                                    name="tTest"
+                                    id="cTest"
+                                    size="45"
+                                    maxlength="80"
+                                    placeholder="Outras Informações"
+                                />
+                            </p>
+                        </fieldset>
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                            <!--radio implanta uma "bolinha de marcação" de seleção de opção, nesse caso o input fica antes do label, ou seja, entrada antes da informação. Se quiser que a opção fique já marcada entre com o parâmetro checked-->
+                            <input type="radio" name="tSexo" id="cMasc" /><label
+                                for="cMasc"
+                            >
+                                Masculino</label
+                            ><br />
+                            <input type="radio" name="tSexo" id="cFemi" /><label
+                                for="cFemi"
+                            >
+                                Feminino</label
+                            ><br />
+                            <input type="radio" name="tSexo" id="cSem" /><label
+                                for="cSem"
+                            >
+                                Outra Opção</label
+                            >
+                        </fieldset>
+                        <fieldset id="endereco">
+                            <legend>Endereço do Usuário</legend>
+                            <p>
+                                <label for="cEndereco">End:</label>
+                                <input
+                                    type="text"
+                                    name="tEndereco"
+                                    id="cEndereco"
+                                    size="42"
+                                    maxlength="80"
+                                    placeholder="Rua, Avenida, Travessa..."
+                                />
+                            </p>
+                            <p>
+                                <label for="cNumero">Núm:</label>
+                                <input
+                                    type="number"
+                                    name="tNumero"
+                                    id="cNumero"
+                                    size="18"
+                                    maxlength="9"
+                                    min="0"
+                                    max="999999999"
+                                    placeholder="Número"
+                                />
+                            </p>
+                            <p>
+                                <label for="cCompl">Comp:</label>
+                                <input
+                                    type="text"
+                                    name="tCompl"
+                                    id="cCompl"
+                                    size="20"
+                                    maxlength="40"
+                                    placeholder="Qd, Bl, Apto..."
+                                />
+                            </p>
+                            <p>
+                                <label for="cCid">Cidade:</label>
+                                <input
+                                    type="text"
+                                    name="tCid"
+                                    id="cCid"
+                                    size="20"
+                                    maxlength="40"
+                                    placeholder="Cidade"
+                                    list="cidades"
+                                />
+                            </p>
+                            <datalist id="cidades">
+                                <!--datalist cria uma lista de opções pré definidas-->
+                                <option value="Fortaleza"></option>
+                                <option value="Caucaia"></option>
+                                <option value="Horizonte"></option>
+                                <option value="Maracanaú"></option>
+                            </datalist>
+                            <p>
+                                <label for="cEstado">Estado:</label>
+                                <!--a Tag Select cria caixas de seleção combinadas com option para as OPÇÕES e optgroup para GRUPO DE OPÇÕES, VALEU retorna o valor da seleção e o parâmetro selected indica o valor padrão inicial-->
+                                <select name="tEstado" id="cEstado">
+                                    <option value="--" selected>--</option>
+                                    <optgroup label="Região Sudeste">
+                                        <option value="RJ">
+                                            Rio de Janeiro
+                                        </option>
+                                        <option value="SP">São Paulo</option>
+                                    </optgroup>
+                                    <optgroup label="Nordeste">
+                                        <option value="CE">Ceará</option>
+                                        <option value="PE">Pernambuco</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="cCEP">CEP:</label>
+                                <input
+                                    type="text"
+                                    name="tCEP"
+                                    id="cCEP"
+                                    size="12"
+                                    maxlength="8"
+                                    placeholder="Somente números"
+                                />
+                            </p>
+                        </fieldset>
+                        <fieldset id="mensagem">
+                            <legend>Mensagem do Usuário</legend>
+                            <p>
+                                <label for="cGrau">Grau de Urgência:</label> Mín
+                                <input
+                                    type="range"
+                                    name="tGrau"
+                                    id="cGrau"
+                                    min="0"
+                                    max="12"
+                                    step="2"
+                                />
+                                Máx
+                            </p>
+                            <p>
+                                <label for="cMens">Mensagem:</label>
+                                <textarea
+                                    name="tMens"
+                                    id="cMens"
+                                    cols="50"
+                                    rows="10"
+                                    maxlength="1000"
+                                    placeholder="Deixa sua mensagem. Máx 1000 caracteres."
+                                ></textarea>
+                            </p>
+                        </fieldset>
+                        <fieldset id="pedido">
+                            <legend>Quero Comprar um Google Glass</legend>
+                            <p>
+                                <input
+                                    type="checkbox"
+                                    name="tPed"
+                                    id="cPed"
+                                    checked
+                                />
+                                <label for="cPed"
+                                    >Gostaria de adquirir um Google Glass quando
+                                    disponível?</label
+                                >
+                            </p>
+                            <p>
+                                <label for="cCor">Cor:</label>
+                                <input
+                                    type="color"
+                                    name="tCor"
+                                    id="cCor"
+                                    value="#ffffff"
+                                />
+                            </p>
+                            <p>
+                                <label for="cQtd">Quantidade:</label>
+                                <input
+                                    type="number"
+                                    name="tQtd"
+                                    id="cQtd"
+                                    min="1"
+                                    max="5"
+                                    value="0"
+                                />
+                            </p>
+                            <p>Preço Unitário: R$ 1.000,00</p>
+                            <p>
+                                <label for="cTot">Preço Total: R$</label>
+                                <input
+                                    type="text"
+                                    name="tTot"
+                                    id="cTot"
+                                    placeholder="Total a Pagar"
+                                    readonly
+                                />
+                            </p>
+                        </fieldset>
+                        <!-- <p><label for="cEnviar"></label> -->
+                        <!-- <input type="submit" name="tEnviar" id="cEnviar"></p> ESTE É O INPUT PADRÃO DO NAVEGADOR-->
+                        <input
+                            type="image"
+                            src="./imagens/botao-enviar.png"
+                            name="tEnviar"
+                            id="cEnviar"
+                        />
+                    </form>
+                </article>
+            </section>
+            <footer id="rodape">
+                <p>
+                    Copyright &copy; 10/2020 - by Marcelo I Campos - Sobre
+                    <a href="./about.html">QUEM SOU EU</a><br />
+                    <a
+                        href="https://www.facebook.com/marceloicampos"
+                        target="_blank"
+                        >Facebook</a
+                    >
+                    |
+                    <a href="https://github.com/marceloicampos" target="_blank"
+                        >GitHub</a
+                    >
+                </p>
+            </footer>
+        </div>
+    </body>
 </html>

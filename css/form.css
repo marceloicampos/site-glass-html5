@@ -3,17 +3,20 @@
 form {
     width: 650px;
     margin: auto;
-
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     font-family: sans-serif;
     font-weight: normal;
     font-size: 13pt;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-input:hover, textarea:hover, select:hover {
+input:hover,
+textarea:hover,
+select:hover {
     background-color: #dddddd;
 }
 
@@ -39,16 +42,16 @@ textarea {
 }
 
 fieldset#endereco {
-    background: url("../imagens/icone-endereco.png") no-repeat 98% 98%;
-    background-size: 150px 150px; 
+    background: url('../imagens/icone-endereco.png') no-repeat 98% 98%;
+    background-size: 150px 150px;
 }
 
 fieldset#mensagem {
-    background: url("../imagens/icone-mensagem.png") no-repeat 98% 98%;
+    background: url('../imagens/icone-mensagem.png') no-repeat 98% 98%;
     background-size: 150px 150px;
 }
 
 fieldset#pedido {
-    background: url("../imagens/icone-pagamento.png") no-repeat 98% 98%;
+    background: url('../imagens/icone-pagamento.png') no-repeat 98% 98%;
     background-size: 150px 150px;
 }
