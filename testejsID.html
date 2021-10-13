@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <title>Testando JavaScript com ID</title>
-</head>
-<body>
-    <h1>Testando JavaScript com ID</h1>
-    <p><a href="./index.html">&larr; voltar para home</a></p>
-    <h2>Passe o mouse e ligue a Lâmpada</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <title>Testando JavaScript com ID</title>
+    </head>
+    <body>
+        <h1>Testando JavaScript com ID</h1>
+        <p><a href="./index.html">&larr; voltar para home</a></p>
+        <h2>Passe o mouse e ligue a Lâmpada</h2>
         <!-- (entre) parêntes são parâmetros -->
         <!-- {entre} colchetes são códigos -->
-    <script>
-        function ligaLampada() {
-            document.getElementById("luz").src="./imagens/lampada-acesa.jpg"
-        }
-        function apagaLampada () {
-            document.getElementById("luz").src="./imagens/lampada-apagada.jpg"
-        }
-        function quebraLampada () {
-            document.getElementById("luz").src="./imagens/lampada-quebrada.jpg"
-        }
-        function alertLampada () {
-            alert("VOCÊ quebrou a Lâmpada")
-        }
-    </script>
-    <img src="./imagens/lampada-apagada.jpg" id="luz" onmousemove="ligaLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()" ondblclick="alertLampada()">
-    <h3 style="color:red">CUIDADO: NÃO CLIQUE na lâmpada.<br>Se clicar a lâmpada quebra, mas volta ao normal.<br>Se clicar duas vezes a lãmpada quebra e emite alerta !!!</h3>
-</body>
+        <script>
+            function ligaLampada() {
+                document.getElementById('luz').src =
+                    './imagens/lampada-acesa.jpg'
+            }
+            function apagaLampada() {
+                document.getElementById('luz').src =
+                    './imagens/lampada-apagada.jpg'
+            }
+            function quebraLampada() {
+                document.getElementById('luz').src =
+                    './imagens/lampada-quebrada.jpg'
+            }
+            function alertLampada() {
+                alert('VOCÊ quebrou a Lâmpada')
+            }
+        </script>
+        <img
+            src="./imagens/lampada-apagada.jpg"
+            id="luz"
+            onmousemove="ligaLampada()"
+            onmouseout="apagaLampada()"
+            onclick="quebraLampada()"
+            ondblclick="alertLampada()"
+        />
+        <h3 style="color: red">
+            CUIDADO: NÃO CLIQUE na lâmpada.<br />Se clicar a lâmpada quebra, mas
+            volta ao normal.<br />Se clicar duas vezes a lãmpada quebra e emite
+            alerta !!!
+        </h3>
+    </body>
 </html>
